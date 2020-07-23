@@ -1,0 +1,181 @@
+/* Background */
+body {
+    background-color: white;
+    min-width: 500px;
+}
+
+/* Link format */
+.link { 
+    color: black;
+    text-decoration:none;
+}
+
+/* Vertical line */
+.vertical { 
+    border-left: 2px solid black; 
+    height: 89%;
+    position:absolute; 
+    left: 25%; 
+} 
+
+/* Task Planner logo format*/
+#logo {
+    color: black;
+    clear: both;
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+
+/* Profile format */
+.profile {
+    cursor: pointer;
+    width:auto;
+    color: black;
+    text-align: right;
+    float: right;
+    margin-right: 15px;
+    margin-top: 9px;
+    margin-bottom: 1px;
+}
+
+/* Input box format */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Button format */
+button {
+  background-color:black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Highlights the button when hovering */
+button:hover {
+  opacity: 1;
+}
+
+/* Close button positioning */
+.closebutton {
+  text-align: center;
+  position: relative;
+}
+
+/* Adds some area to the box */
+.container {
+  padding: 12px; 
+}
+
+/* Account Form background*/
+.accountform {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+/* Login form positioning */
+.accountform-login-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 35%;
+  min-width: 300px; /* If a method is found to switch to percents, it will be */
+}
+
+/* Signup form positioning */
+.accountform-signup-content {
+  background-color: #fefefe;
+  margin: -2.5% auto 15% auto;
+  border: 1px solid #888;
+  width: 35%;
+  min-width: 300px; /* If a method is found to switch to percents, it will be */
+}
+
+/* Close button positioning for login */
+.close-login {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button positioning for signup */
+.close-signup {
+  position: absolute;
+  right: 10px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Hover mechanincs for close button */
+.close-login:hover,
+.close-login:focus,
+.close-signup:hover,
+.close-signup:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Fixes some format issues */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.psw {
+  float: right;
+}
+
+/* Animates the zoom animation when opening a form */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+/* Helps with the animation funciton */
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+/* Helps with the animation funciton */
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

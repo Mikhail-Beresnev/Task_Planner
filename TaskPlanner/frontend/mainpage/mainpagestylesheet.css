@@ -1,0 +1,155 @@
+/* Background */
+body {
+  background-color: white;
+  min-width: 500px;
+}
+
+/* Link format */
+.link { 
+  color: black;
+  text-decoration:none;
+}
+
+/* Vertical line */
+.vertical { 
+  border-left: 2px solid black; 
+  height: 89%;
+  position:absolute; 
+  left: 25%; 
+} 
+
+/* Task Planner logo format*/
+#logo {
+  color: black;
+  clear: both;
+  text-align: left;
+  float: left;
+  margin-left: 5px;
+  margin-top: 1px;
+  margin-bottom: 3px;
+}
+
+/* Profile format */
+.profile {
+  cursor: pointer;
+  width:auto;
+  color: black;
+  text-align: right;
+  float: right;
+  margin-right: 15px;
+  margin-top: 9px;
+  margin-bottom: 1px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 10px 0;
+  font-size: large;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.addBtn {
+  padding: 3px;
+  width: 10%;
+  background: white;
+  color: black;
+  border: 1px solid gray;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  left: 88%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+ul li {
+  white-space: pre-wrap;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 16px 12px 10px;
+  list-style-type: none;
+  background: white;
+  width: 94%;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li.checked {
+  background: white;
+  color: black;
+  text-decoration: line-through;
+  width: 94%;
+}
+
+/* Style the close button */
+.close {
+  resize: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.blogTextArea {
+  resize: none;
+  margin: 10px 0;
+  cursor: default;
+}
+
+.flexsizing {
+display: flex;
+flex-wrap: wrap;
+}
+
+.todoList {
+flex-basis: 24%;
+}
+
+.itemBlog {
+  flex-basis: 25%;
+  margin-left: 2%;
+  word-wrap: break-word;
+}
+
+textarea {
+  white-space: pre-wrap;
+}
+
+.closeBlog {
+  cursor: pointer;
+  position: absolute;
+  resize: none;
+  right: 0;
+  top: 15%;
+  padding: 12px 16px 12px 16px;
+  height: 1em;
+  width: .75em;
+  overflow: hidden;
+  border: hidden;
+}
+
+.closeBlog:hover {
+  background-color: #f44336;
+  color: white;
+}
+

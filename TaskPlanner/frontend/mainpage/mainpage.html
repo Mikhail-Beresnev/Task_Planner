@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="mainpagestylesheet.css">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Planner</title>
+</head>
+
+<body>
+    <!-- Heading -->
+    <div>
+        <h1 id="logo"> <a class="link" href="#">Task Planner</a></h1>
+        <h2 class="profile"> Name Placeholder </h2>
+        <hr style="clear:both;" color="black">
+    </div>
+
+    <div class="flexsizing">
+        <!-- Left Subsection -->
+        <!-- To-Do List -->
+        <div class="todoList">
+            <h2 id="todotitle">My To Do List</h2>
+            <input type="text" id="taskInput" placeholder="Task...">
+            <div onclick="newTask()" class="addBtn">Add</div>
+            <hr>
+            <ul id="todoList"></ul>
+        </div>
+        
+        <div class="vertical"></div>
+        <!-- Right Subsection -->
+        <!-- Blog Section -->
+        <div class="itemBlog">
+            <h2 id="itemBlogTitle">My Blog</h2>
+            <textarea type="text" rows="10" cols="100" class="blogTextArea" id="blogInput"></textarea>
+            <div onclick="newBlog()" class="addBtn">Add</div>
+            <ul id="blogList"></ul>
+        </div>
+        <script src="todolist.js"></script>
+        <script src="itemblog.js"></script>
+    </div>
+</body>
+
+</html>
